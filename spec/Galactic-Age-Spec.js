@@ -1,9 +1,16 @@
-import {pingPong} from './../src/ping-pong.js';
+import { GalacticAgeCalculator } from './../src/Galactic-Age.js';
 
-describe('pingPong', function() {
+describe('GalacticAgeCalculator', function()
+{
+  it('should test for the earth age and return 31.87', function()
+  {
+    let age = new GalacticAgeCalculator(1986,6,11);
+    expect(parseFloat(age.getAge())).toEqual(31.87);
+  });
 
-  it('should return ping pong if the number is equal to 15', function() {
-    var output = new pingPong(3);
-    expect(output).toEqual([1,2,"ping"]);
+  it('should test for the mercury age and return 132.8', function()
+  {
+    let age = new GalacticAgeCalculator(1986,6,11);
+    expect(parseFloat(age.getMercuryYears())).toEqual(132.8);
   });
 });
