@@ -1,6 +1,6 @@
-const webpackConfig = require('./webpack.config.js');
 // Karma configuration
-// Generated on Tue May 28 2019 15:01:48 GMT-0700 (PDT)
+// Generated on Thu May 30 2019 09:41:16 GMT-0700 (PDT)
+const webpackConfig = require('./webpack.config.js');
 
 module.exports = function(config) {
   config.set({
@@ -20,9 +20,8 @@ module.exports = function(config) {
       'spec/*spec.js'
     ],
 
-
-    // list of files / patterns to exclude
     webpack: webpackConfig,
+    // list of files / patterns to exclude
     exclude: [
     ],
 
@@ -30,8 +29,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'src/*.js': ['webpack'],
-      'spec/*spec.js': ['webpack']
+      'src/*js': ['webpack', 'sourcemap'],
+      'spec/*spec.js': ['webpack', 'sourcemap']
     },
 
     plugins: [
@@ -39,8 +38,10 @@ module.exports = function(config) {
       'karma-webpack',
       'karma-jasmine',
       'karma-chrome-launcher',
-      'karma-jasmine-html-reporter'
+      'karma-jasmine-html-reporter',
+      'karma-sourcemap-loader'
     ],
+
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
