@@ -5,34 +5,36 @@ export class GalacticAgeCalculator
     this.birthDate = new Date(birthdate);
     this.currentDate = new Date();
   }
-  birthDate()
+  BirthDate()
   {
     return this.birthDate;
   }
 
   Age()
   {
-    let age = this.currentDate.toFixed(1) - this.birthDate.toFixed(1);
-    return age;
+    let difference = this.currentDate - this.birthDate;
+    // This is the amount of Seconds in a year.
+    let age = difference / (31557600000);
+    return parseFloat (age.toFixed());
   }
   Mercury()
   {
-    return parseFloat ( (this.Age() * .24).toFixed(1) );
+    return parseFloat ( (this.Age() * .24).toFixed() );
   }
   Venus()
   {
-    return parseFloat ( (this.Age() * .62).toFixed(1) );
+    return parseFloat ( (this.Age() * .62).toFixed() );
   }
   Mars()
   {
-    return parseFloat ( (this.Age() * 1.88).toFixed(1) );
+    return parseFloat ( (this.Age() * 1.88).toFixed() );
   }
   Jupiter()
   {
-    return parseFloat ( (this.Age() * 11.86).toFixed(1) );
+    return parseFloat ( (this.Age() * 11.86).toFixed() );
   }
   LifeLeft()
   {
-    return (this.Age().toFixed(1) - 79);
+    return (this.Age().toFixed() - 79);
   }
 }
