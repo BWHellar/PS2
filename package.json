@@ -1,5 +1,5 @@
 {
-  "name": "Galactic-Age",
+  "name": "PS2",
   "version": "1.0.0",
   "description": "Node JS",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BWHellar/GalacticAgeCalculator.git"
+    "url": "git+https://github.com/BWHellar/PS2.git"
   },
   "keywords": [],
   "author": "Brendan Hellar",

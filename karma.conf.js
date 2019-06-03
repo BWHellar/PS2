@@ -17,7 +17,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'src/*.js',
-      'spec/Galactic-Age-Spec.js'
+      'spec/PS2-Spec.js'
     ],
 
     webpack: webpackConfig,
@@ -30,7 +30,7 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       'src/*js': ['webpack', 'sourcemap'],
-      'spec/Galactic-Age-Spec.js': ['webpack', 'sourcemap']
+      'spec/PS2-Spec.js': ['webpack', 'sourcemap']
     },
 
     plugins: [
