@@ -10,13 +10,14 @@
 #### PlanetSide 2 currently does not have a function and visible depletion rate of Cortium levels during base building.  While the game alerts you to when your levels are low it does not tell you what they are currently at.  In addition to this there is no apparent information on the rate of depletion each base module contributes over all. Depletion generally runs at a rate of (2 + .5 * modules) per second (With some larger modules running higher).  Since the depletion rate runs per second this input and timing of this app is generally timed (Unless you've got some crazy fast data input skills).
 
 ## Key
-'''
+```
+==============
 CpS = Cortium Per Second.
 Cortium = The resource used for buying and maintaining a base. These resources can be mined by the player
 Certs = Skills points that can be used to upgrade various aspects of gameplay. These skill points are gained through play passively.
 Modules = Modules are components that can be added to a base like walls, turrets, Cortium silo, etc
 ==============
-'''
+ ```
 ## Specs
 | Spec | Input | Output | Reasoning |
 | :-------------     | :------------- | :------------- | :----------- |
