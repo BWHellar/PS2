@@ -11,12 +11,10 @@
 
 ## Key
 ```
-==============
 CpS = Cortium Per Second.
 Cortium = The resource used for buying and maintaining a base. These resources can be mined by the player
 Certs = Skills points that can be used to upgrade various aspects of gameplay. These skill points are gained through play passively.
 Modules = Modules are components that can be added to a base like walls, turrets, Cortium silo, etc
-==============
  ```
 ## Specs
 | Spec | Input | Output | Reasoning |
@@ -24,7 +22,7 @@ Modules = Modules are components that can be added to a base like walls, turrets
 | **Will allow the user to input starting Cortium** | User input: "10,000" | Output: "You have 10000 Cortium" | Reasoning: The user can input their starting Cortium levels as starting amounts range from 8000-10000 depending on Certs.|
 | **Will allow users to add modules** | User input: "AP Turret - Cost: 400" | Output: "You have 9600 Cortium" | Reasoning: Modules have an initial cost amount to place.  When selected it will subtract that amount from the current amount. |
 | **Will subtract Cortium levels based upon implemented modules** | User input: "Silo(2CpS), AP Turret(.5CpS), Flail Artillery(1CpS)" | Output: "Cortium loss: 3.5 CpS" | Reasoning: As depletion in game is by the second according to modules the app will constantly decrease the cortium amount based on information provided by user. |
-
+| **Will allow user to clear base** | User input: "[Clear]" | Output: "Base deleted" | Reasoning: If your base gets murked due to poor base planning you can wipe the board and restart.|
 
 
 
